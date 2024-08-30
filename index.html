@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Specification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #8B1E1E;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            max-width: 50px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+        .info-table, .operation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table th, .info-table td,
+        .operation-table th, .operation-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .info-table th {
+            width: 30%;
+        }
+        .operation-table th {
+            background-color: #f2f2f2;
+        }
+        .applications-comments {
+            border: 1px solid #000;
+            padding: 10px;
+            font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .info-table th, .info-table td,
+            .operation-table th, .operation-table td {
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 18px;
+            }
+            .info-table th, .info-table td,
+            .operation-table th, .operation-table td {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="your-logo-url.png" alt="Logo">
+        <h1>Darwin-Jones Corp.</h1>
+        <p>21 Princess Lane, Sylmar, CA 91342<br>darwinjonescorp@email.com | 222 555 7777</p>
+    </div>
+
+    <div class="content">
+        <div class="section-title">TECHNICAL SPECIFICATION</div>
+
+        <table class="info-table">
+            <tr>
+                <th>Prepared by:</th>
+                <td>John Harington</td>
+                <th>Serial Number:</th>
+                <td>9012-3412</td>
+            </tr>
+            <tr>
+                <th>Template Version:</th>
+                <td>1</td>
+                <th>Document Version:</th>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <div class="section-title">REFERENCE DOCUMENTS</div>
+        
+        <table class="info-table">
+            <tr>
+                <th>B2B Security Specification</th>
+                <td>B2B Security Standards Specification</td>
+                <td>AIM is an application that supports provisioning of the roles necessary for the certificate to interface with the ISO’s applications.</td>
+            </tr>
+            <tr>
+                <th>Acceptable date Time Format</th>
+                <td>Acceptable formats for specifying the date Time data type for submit and request services</td>
+                <td>User/Certificate Role Provisioning</td>
+            </tr>
+        </table>
+
+        <div class="section-title">OPERATION DETAILS</div>
+
+        <table class="operation-table">
+            <tr>
+                <th>Input</th>
+                <td>Any message created by the user</td>
+            </tr>
+            <tr>
+                <th>Output</th>
+                <td>Standard reply output</td>
+            </tr>
+            <tr>
+                <th>Fault</th>
+                <td>Can be optional</td>
+            </tr>
+        </table>
+
+        <div class="section-title">Applications Specific Comments</div>
+
+        <div class="applications-comments">
+            The resource type and sub type to measurement type mapping is provided in the document inside the packaging. The resource ID should always be entered in an element that matches the resource type classification in the MF.
+        </div>
+    </div>
+
+</body>
+</html>
